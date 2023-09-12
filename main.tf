@@ -29,6 +29,7 @@ resource "aws_subnet" "a" {
   tags = {
     Status = "created by TF"
     Name = "${var.env_name} - subnet A"
+    Ecs = "true"
   }
 }
 
@@ -41,6 +42,7 @@ resource "aws_subnet" "b" {
   tags = {
     Status = "created by TF"
     Name = "${var.env_name} - subnet B"
+    Ecs = "true"
   }
 }
 
@@ -53,6 +55,7 @@ resource "aws_subnet" "c" {
   tags = {
     Status = "created by TF"
     Name = "${var.env_name} - subnet C"
+    Ecs = "true"
   }
 }
 
