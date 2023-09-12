@@ -62,7 +62,7 @@ resource "aws_subnet" "c" {
 
 resource "aws_eip" "nat_gateway" {
   count = var.enable_nat_gateway ? 1 : 0
-  vpc = true
+  domain  = "vpc"
 }
 
 resource "aws_nat_gateway" "nat_gateway" {
